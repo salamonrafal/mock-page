@@ -1,6 +1,5 @@
 /*
  * Bootstarp application
- *
  */
 angular.module('tm.mockpage', [
     'ui.router',
