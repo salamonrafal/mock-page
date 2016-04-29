@@ -14,7 +14,8 @@
   "author": "Rafał Salamon <rafcio0584@gmail.com>",
   "dependencies": {
       "gulp": ">=3.9.1",
-      "gulp-include": ">=2.1.0"
+      "gulp-include": ">=2.1.0",
+      "gulp-preprocess": ">=2.0.0"
   },
   "devDependencies" : {}
 }

@@ -1,3 +1,6 @@
 /nbproject/private/
 /nbproject/
 /templates/client/css/theme/
+/.settings/
+.project
+.buildpath
