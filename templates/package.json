@@ -1,0 +1,20 @@
+{
+  "name": "mock-page",
+  "version": "1.0.0",
+  "description": "Create mockin page app",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/salamonrafal/mock-page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/salamonrafal/mock-page/issues"
+  },
+  "keywords": [],
+  "author": "Rafał Salamon <rafcio0584@gmail.com>",
+  "dependencies": {
+      "gulp": ">=3.9.1",
+      "gulp-include": ">=2.1.0"
+  },
+  "devDependencies" : {}
+}
