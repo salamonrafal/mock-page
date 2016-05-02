@@ -1,5 +1,13 @@
 // _main.scss
 
 body {
-    background-color: $primary-color;
+    background-color: $secondary-color;
+    color: $primary-color;
+    font-family: $font-stack;
+}
+
+.mp-container {
+	background-color: $layout-secondary-color;
+	color: $layout-primary-color;
+	width: $layout-width;
 }
