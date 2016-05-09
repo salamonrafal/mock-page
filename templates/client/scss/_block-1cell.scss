@@ -1,8 +1,8 @@
-// _block-simple.scss
+// _block-1cell.scss
 
-.mp-block-simple {
+.mp-block-1cell {
 	background-color: #FFF;
-	width: 100%;
+	width: 25%;
 	
 	p, h1, h2, h3, h4, h5, h6, h7 {
 		margin: 0px;
@@ -23,6 +23,10 @@
 			margin-top: 10px;
 		}
 	}
-	
 }
 
+@media screen and (max-width: 992px) {
+	.mp-block-1cell {
+		width: 100%
+	}
+}

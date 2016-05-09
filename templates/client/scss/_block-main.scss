@@ -1,1 +1,27 @@
 // _block-main.scss
+.mp-container {
+	background-color: $block-secondary-color;
+	color: $block-primary-color;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-bottom: 1px;
+}
+
+.mp-content-block-table {
+	background-color: #FFF;
+	display: table-row;
+}
+
+@media screen and (min-width: 768px) {
+	.mp-container {
+		width: $block-width768;
+	}
+} 
+
+
+@media screen and (min-width: 992px) {
+	.mp-container {
+		width: $block-width;
+	}
+} 
+

@@ -1,13 +1,14 @@
 // _main.scss
 
-body {
-    background-color: $secondary-color;
-    color: $primary-color;
-    font-family: $font-stack;
-}
-
-.mp-container {
-	background-color: $layout-secondary-color;
-	color: $layout-primary-color;
-	width: $layout-width;
+html, 
+body, 
+div, 
+span,
+p, 
+h1, 
+h2, 
+h3, 
+h5, 
+h6 {
+	font-family: $font-stack;
 }
