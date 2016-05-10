@@ -1,0 +1,27 @@
+// _block-simple.scss
+
+.mp-block-simple {
+    background-color: #FFF;
+    width: 100%;
+
+    p, h1, h2, h3, h4, h5, h6, h7 {
+        margin: 0px;
+    }
+
+    h2.mp-block-title {
+        font-size: 24px;
+        // background-color: #000;
+        // color: #FFF;
+        font-weight: bold;
+        padding: 5px;
+    }
+
+    .mp-block-content {
+        padding: 5px;
+
+        p {
+            margin-top: 10px;
+        }
+    }
+}
+
