@@ -1,32 +1,20 @@
 // _block-1cell.scss
 
 .mp-block-1cell {
-	background-color: #FFF;
-	width: 25%;
-	
-	p, h1, h2, h3, h4, h5, h6, h7 {
-		margin: 0px;
-	}
-	
-	h2.mp-block-title {
-		font-size: 24px;
-		// background-color: #000;
-		// color: #FFF;
-		font-weight: bold;
-		padding: 5px;
-	}
-	
-	.mp-block-content {
-		padding: 5px;
-		
-		p {
-			margin-top: 10px;
-		}
-	}
+    background-color: #FFF;
+    width: 25%;
+
+    p, h1, h2, h3, h4, h5, h6, h7 {
+        margin: 0px;
+    }
+
+    .mp-block-content {
+        padding: 5px;
+    }
 }
 
 @media screen and (max-width: 992px) {
-	.mp-block-1cell {
-		width: 100%
-	}
+    .mp-block-1cell {
+        width: 100%
+    }
 }

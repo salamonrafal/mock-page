@@ -1,22 +1,26 @@
 <!-- partials/common/_body.html -->
 
 <article>
-	<header>
+    <header class="row">
+        <div class="<!-- @echo class_header_container -->">
+            <!--=include ./_page-header.html -->
+        </div>
+    </header>
 	
-	</header>
+    <div class="<!-- @echo class_content_blocks -->">
+        <div class="<!-- @echo class_content_blocks_table -->">
+            <div class="<!-- @echo class_wraper_blocks -->"></div>
+            <!--=include ./_block-simple.html -->
+            <!--=include ./_block-2cell.html --> 
+            <!--=include ./_block-1cell.html -->
+            <!--=include ./_block-50prec.html -->
+            <!--=include ./_block-50prec.html -->
+        </div>
+    </div>
 	
-	<div class="<!-- @echo class_content_blocks -->">
-		<div class="<!-- @echo class_content_blocks_table -->">
-			<!--=include ./_block-simple.html -->
-			<!--=include ./_block-2cell.html -->
-			<!--=include ./_block-1cell.html -->
-			<!--=include ./_block-simple.html -->
-		</div>
-	</div>
-	
-	<footer>
-		
-	</footer>
+    <footer>
+
+    </footer>
 </article>
 
 

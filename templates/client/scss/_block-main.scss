@@ -1,27 +1,68 @@
 // _block-main.scss
 .mp-container {
-	background-color: $block-secondary-color;
-	color: $block-primary-color;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-bottom: 1px;
+    background-color: $block-secondary-color;
+    color: $block-primary-color;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-bottom: 1px;
 }
 
 .mp-content-block-table {
-	background-color: #FFF;
-	display: table-row;
+    background-color: #FFF;
+    display: table-row;
 }
 
-@media screen and (min-width: 768px) {
-	.mp-container {
-		width: $block-width768;
-	}
+.mp-block-common {
+    
+    h2.mp-block-title {
+        font-size: 24px;
+        font-weight: bold;
+        padding: 15px 5px 0px 5px;
+    }
+    
+    .mp-style-justify {
+        text-align: justify;
+    }
+    
+    .mp-style-center {
+        text-align: center;
+    }
+    
+    h2, h3, h4, h5, h6, p {
+        padding-top: 15px;
+    }
+    
+    h2 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    h3 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    h4 {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    h5, h6 {
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .mp-container {
+        width: $block-width768;
+    }
 } 
 
 
 @media screen and (min-width: 992px) {
-	.mp-container {
-		width: $block-width;
-	}
+    .mp-container {
+        width: $block-width;
+    }
 } 
 

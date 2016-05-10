@@ -11,7 +11,12 @@ var gulp        = require('gulp'),
 		class_block_simple: 'mp-block-simple',
 		class_block_2cell: 'mp-block-2cell',
 		class_block_1cell: 'mp-block-1cell',
+		class_block_50prec: 'mp-block-50prec',
 		class_block_title: 'mp-block-title',
+                class_header_container: 'mp-header-container',
+                class_header_thubnail: 'mp-header-thubnail',
+                class_wraper_blocks: 'mp-wraper-blocks',
+                class_block_common: 'mp-block-common',
 		class_block_content: 'mp-block-content'
 	};
 
