@@ -49,10 +49,10 @@ gulp.task("build:html:view", function() {
 
 gulp.task("sass", function() {
     console.log("-- gulp is running task 'sass'");
-    return gulp.src('./client/scss/**/*.scss')
+    return gulp.src('./sources/scss/**/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./client/theme/css'));
+        .pipe(gulp.dest('./client/css/theme/'));
 });
 
  
-gulp.task("default", ["build:html:view", "build:html:editor"]);
+gulp.task("default", ["build:html:view", "build:html:editor", "sass"]);
