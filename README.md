@@ -1,5 +1,5 @@
 # Mocking page module
 
-# Template Installation
+## Template Installation
 ` > cd templates/ `
 ` > gulp`
