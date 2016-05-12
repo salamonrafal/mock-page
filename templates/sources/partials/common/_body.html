@@ -1,23 +1,32 @@
 <!-- partials/common/_body.html -->
 
 <article>
-    <header class="row">
-        <div class="<!-- @echo class_header_container -->">
-            <!--=include ./_page-header.html -->
-        </div>
+    <header class="<!-- @echo class_card_header -->">
+        <!--=include ./_page-header.html -->
+        <!--=include ./_page-header-block.html -->
     </header>
-	
-    <div class="<!-- @echo class_content_blocks -->">
-        <div class="<!-- @echo class_content_blocks_table -->">
-            <div class="<!-- @echo class_wraper_blocks -->"></div>
-            <!--=include ./_block-simple.html -->
-            <!--=include ./_block-2cell.html --> 
-            <!--=include ./_block-1cell.html -->
-            <!--=include ./_block-50prec.html -->
-            <!--=include ./_block-50prec.html -->
-        </div>
-    </div>
-	
+	<main>
+	    <div class="<!-- @echo class_content_blocks -->">
+	        <div class="<!-- @echo class_content_blocks_table -->">            
+	            <div class="row <!-- @echo class_row_block --> <!-- @echo class_card_standard -->">
+	            	<!--=include ./_block-simple.html -->
+	            </div>
+	            
+	            <div class="row <!-- @echo class_row_block --> <!-- @echo class_card_standard -->">
+	            	<div class="col-md-8 mp-block-2cell">
+		            	<!--=include ./_block-full.html -->
+		            	<!--=include ./_block-full.html -->
+	            	</div>
+	            	<!--=include ./_block-1cell.html -->
+	            </div>
+	            
+	            <div class="row <!-- @echo class_row_block --> <!-- @echo class_card_standard -->">
+		            <!--=include ./_block-50prec.html -->
+		            <!--=include ./_block-50prec.html -->
+	            </div>
+	        </div>
+	    </div>
+	</main>
     <footer>
 
     </footer>

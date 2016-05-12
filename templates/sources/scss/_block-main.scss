@@ -1,6 +1,6 @@
 // _block-main.scss
 .mp-container {
-    background-color: $block-secondary-color;
+    background-color: transparent;
     color: $block-primary-color;
     padding-left: 1px;
     padding-right: 1px;
@@ -8,8 +8,13 @@
 }
 
 .mp-content-block-table {
-    background-color: #FFF;
+    background-color: transparent;
     display: table-row;
+}
+
+.row.mp-row-block {
+	margin-left: 0px;
+	margin-right: 0px; 
 }
 
 .mp-block-common {
