@@ -1,8 +1,44 @@
 // _heroimage.scss
+.mp-default-branding {
+	.mp-header-container {
+	    height: 330px;
+	    position: relative;
+	}
+	
+	//For Desktop
+	@media screen and (min-width: 769px) {
+		.mp-header-container {
+			height: 330px;
+		}
+	}
+	
+	// For Tablet
+	@media screen and (max-width: 768px) {
+		.mp-header-container {
+			height: 225px;
+		}
+	}
+	
+	// For mobile S & M & L
+	@media screen and (max-width: 425px) {
+		.mp-header-container {
+			height: 135px;
+		}
+	}
+	
+	.mp-branding-head-background {
+		width: 100%;
+		height: 100%;
+		background-color: #CCC;
+	}
+}
 
-.mp-header-container {
-    height: 250px;
-    position: relative;
+.mp-disabled-branding {
+	.mp-header-container {
+	    height: 100px;
+	    position: relative;
+	}
+
 }
 
 .mp-header-thubnail {
@@ -13,12 +49,6 @@
 }
 
 .mp-header-block {
-    height: 80px;
+    min-height: 180px;
     background-color: transparent;
-}
-
-.mp-branding-head-background {
-	width: 100%;
-	height: 100%;
-	background-color: #CCC;
 }

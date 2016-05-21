@@ -1,0 +1,30 @@
+// default-branding.scss
+.mp-default-branding {
+	.mp-branding-head-background {
+		background-color: #C2C2C2;
+		background-repeat: no-repeat; 
+		background-position: center;
+		background-size: cover;
+	}
+
+	//For Desktop
+	@media screen and (min-width: 769px) {
+		.mp-branding-head-background {
+			background-image: url('/templates/client/uploads/brand-image-938x350.png');
+		}
+	}
+	
+	// For Tablet
+	@media screen and (max-width: 768px) {
+		.mp-branding-head-background {
+			background-image: url('/templates/client/uploads/brand-image-768x225.png');
+		}
+	}
+	
+	// For mobile S & M & L
+	@media screen and (max-width: 425px) {
+		.mp-branding-head-background {
+			background-image: url('/templates/client/uploads/brand-image-425x135.png');
+		}
+	}
+}
