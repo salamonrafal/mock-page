@@ -5,9 +5,20 @@
 	    position: relative;
 	}
 	
+	.mp-branding-bottom-background {
+		height: 330px;
+		background-color: #000;
+		width: 100%;
+		position: absolute;
+	}
+	
 	//For Desktop
 	@media screen and (min-width: 769px) {
 		.mp-header-container {
+			height: 330px;
+		}
+		
+		.mp-branding-bottom-background {
 			height: 330px;
 		}
 	}
@@ -17,11 +28,19 @@
 		.mp-header-container {
 			height: 225px;
 		}
+		
+		.mp-branding-bottom-background {
+			height: 225px;
+		}
 	}
 	
 	// For mobile S & M & L
 	@media screen and (max-width: 425px) {
 		.mp-header-container {
+			height: 135px;
+		}
+		
+		.mp-branding-bottom-background {
 			height: 135px;
 		}
 	}

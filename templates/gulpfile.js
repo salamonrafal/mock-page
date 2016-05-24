@@ -19,13 +19,22 @@ var gulp        = require('gulp'),
         class_branding_head_background: 'mp-branding-head-background',
         class_default_branding: 'mp-default-branding',
         class_header_container: 'mp-header-container',
+        class_footer_container: 'mp-footer-container',
         class_disabled_branding: 'mp-disabled-branding',
         class_header_thubnail: 'mp-header-thubnail',
         class_header_block: 'mp-header-block',
         class_card_header: 'mp-card-header',
+        class_card_footer: 'mp-card-footer',
         class_card_standard: 'mp-card-standard',
         class_block_common: 'mp-block-common',
-        class_block_content: 'mp-block-content'
+        class_block_content: 'mp-block-content',
+        class_footer_thubnail: 'mp-footer-thubnail',
+        class_footer_company_links_xs: 'mp-footer-company-links-xs',
+        class_footer_company_links_sm: 'mp-footer-company-links-sm',
+        class_footer_company_profile: 'mp-footer-company-profile',
+        class_footer_location: 'mp-footer-location',
+        class_brand_bottom_background: 'mp-branding-bottom-background'
+        
     };
 
 gulp.task("build:html:editor", function() {
