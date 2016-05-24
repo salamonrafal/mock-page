@@ -33,8 +33,8 @@ var gulp        = require('gulp'),
         class_footer_company_links_sm: 'mp-footer-company-links-sm',
         class_footer_company_profile: 'mp-footer-company-profile',
         class_footer_location: 'mp-footer-location',
-        class_brand_bottom_background: 'mp-branding-bottom-background'
-        
+        class_brand_bottom_background: 'mp-branding-bottom-background',
+        class_main_editor_wrapper: 'mp-main-editor-wrapper'
     };
 
 gulp.task("build:html:editor", function() {
