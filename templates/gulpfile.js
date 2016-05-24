@@ -42,6 +42,13 @@ gulp.task("build:html:editor", function() {
 
     themeVariables.class_edit_flag = 'js-editable';
     themeVariables.class_page = 'mp-page-edit';
+    
+    gulp.src("sources/editor_empty_content.html")
+        .pipe(include())
+        .pipe(preprocess({context: themeVariables})) 
+        .on('error', console.log)
+        .pipe(gulp.dest("client/"));
+    
   
     return gulp.src("sources/editor.html")
         .pipe(include())
