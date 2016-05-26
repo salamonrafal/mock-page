@@ -33,8 +33,9 @@ var gulp        = require('gulp'),
         class_footer_company_links_sm: 'mp-footer-company-links-sm',
         class_footer_company_profile: 'mp-footer-company-profile',
         class_footer_location: 'mp-footer-location',
-        class_brand_bottom_background: 'mp-branding-bottom-background'
-        
+        class_brand_bottom_background: 'mp-branding-bottom-background',
+    	pageType: '',
+    	application_name: 'ng-listingedit'
     };
 
 gulp.task("build:html:editor", function() {
@@ -42,8 +43,23 @@ gulp.task("build:html:editor", function() {
 
     themeVariables.class_edit_flag = 'js-editable';
     themeVariables.class_page = 'mp-page-edit';
-  
+    themeVariables.pageType = 'editor';
+    
     return gulp.src("sources/editor.html")
+        .pipe(include())
+        .pipe(preprocess({context: themeVariables})) 
+        .on('error', console.log)
+        .pipe(gulp.dest("client/"));
+});
+
+gulp.task("build:html:editor_empty", function() {
+    console.log("-- gulp is running task 'build:html:editor'");
+
+    themeVariables.class_edit_flag = 'js-editable';
+    themeVariables.class_page = 'mp-page-edit';
+    themeVariables.pageType = 'editor';
+    
+    return gulp.src("sources/editor_empty_content.html")
         .pipe(include())
         .pipe(preprocess({context: themeVariables})) 
         .on('error', console.log)
@@ -54,7 +70,8 @@ gulp.task("build:html:view", function() {
     console.log("-- gulp is running task 'build:html:view'");
 
     themeVariables.class_page = 'mp-page-view';
-  
+    themeVariables.pageType = 'view';
+    
     return gulp.src("sources/view.html")
         .pipe(include())
         .pipe(preprocess({context: themeVariables})) 
@@ -71,4 +88,4 @@ gulp.task("sass", function() {
 });
 
  
-gulp.task("default", ["build:html:view", "build:html:editor", "sass"]);
+gulp.task("default", ["build:html:view", "build:html:editor", 'build:html:editor_empty', "sass"]);
