@@ -37,7 +37,12 @@ var gulp        = require('gulp'),
     	pageType: '',
     	application_name: 'ng-listingedit'
     };
-
+    
+    
+/**
+ * 
+ * 
+ */
 gulp.task("build:html:editor", function() {
     console.log("-- gulp is running task 'build:html:editor'");
 
@@ -52,6 +57,11 @@ gulp.task("build:html:editor", function() {
         .pipe(gulp.dest("client/"));
 });
 
+
+/**
+ * 
+ * 
+ */
 gulp.task("build:html:editor_empty", function() {
     console.log("-- gulp is running task 'build:html:editor'");
 
@@ -66,6 +76,11 @@ gulp.task("build:html:editor_empty", function() {
         .pipe(gulp.dest("client/"));
 });
 
+
+/**
+ * 
+ * 
+ */
 gulp.task("build:html:view", function() {
     console.log("-- gulp is running task 'build:html:view'");
 
@@ -80,6 +95,28 @@ gulp.task("build:html:view", function() {
 });
 
 
+/**
+ * 
+ * 
+ */
+gulp.task("build:angular:app", function(){
+    console.log("-- gulp is running task 'build:angular:app'");
+    
+    themeVariables.class_edit_flag = 'js-editable';
+    themeVariables.class_page = 'mp-page-edit';
+    themeVariables.pageType = 'editor';
+    
+    return gulp.src("sources/angular/*/*/*")
+        .pipe(preprocess({context: themeVariables})) 
+        .on('error', console.log)
+        .pipe(gulp.dest("testClient/"));
+});
+
+
+/**
+ * 
+ * 
+ */
 gulp.task("sass", function() {
     console.log("-- gulp is running task 'sass'");
     return gulp.src('./sources/scss/**/*.scss')
@@ -88,4 +125,4 @@ gulp.task("sass", function() {
 });
 
  
-gulp.task("default", ["build:html:view", "build:html:editor", 'build:html:editor_empty', "sass"]);
+gulp.task("default", ["build:html:view", "build:html:editor", 'build:html:editor_empty', 'build:angular:app', "sass"]);

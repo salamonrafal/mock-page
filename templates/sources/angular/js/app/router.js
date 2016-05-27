@@ -65,6 +65,6 @@ function run($rootScope) {
 }
 
 angular
-    .module('tm.ngbooktime')
+    .module('/* @echo application_name */')
     .run(run)
     .config(config);

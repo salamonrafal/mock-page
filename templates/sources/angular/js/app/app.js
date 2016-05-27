@@ -1,7 +1,7 @@
 /*
  * Bootstarp application
  */
-angular.module('tm.mockpage', [
+angular.module('/* @echo application_name */', [
     'ui.router',
     'ngMessages',
     'ui.bootstrap',
