@@ -4,3 +4,5 @@
 /.settings/
 .project
 .buildpath
+ftp-sync.json
+/.vscode/

@@ -1,7 +1,9 @@
 var gulp        = require('gulp'),
     include     = require('gulp-include'),
     sass        = require('gulp-sass'),
-    preprocess = require('gulp-preprocess');
+    preprocess  = require('gulp-preprocess'),
+    copy        = require('gulp-copy');
+    
     
     themeVariables = {
         class_main: 'mp-container', 
@@ -106,11 +108,22 @@ gulp.task("build:angular:app", function(){
     themeVariables.class_page = 'mp-page-edit';
     themeVariables.pageType = 'editor';
     
-    return gulp.src("sources/angular/*/*/*")
+    return gulp.src("./sources/angular/**")
         .pipe(preprocess({context: themeVariables})) 
         .on('error', console.log)
-        .pipe(gulp.dest("testClient/"));
+        .pipe(gulp.dest("./client/"));
 });
+
+/**
+ * 
+ * 
+ */
+gulp.task("build:vendors", function(){
+    console.log("-- gulp is running task 'build:vendors'");
+    return gulp.src("./sources/js/**")
+        .pipe(copy("./client/js/", { "prefix": 2}));
+});
+
 
 
 /**
@@ -125,4 +138,12 @@ gulp.task("sass", function() {
 });
 
  
-gulp.task("default", ["build:html:view", "build:html:editor", 'build:html:editor_empty', 'build:angular:app', "sass"]);
+ 
+gulp.task("default", [
+    "build:html:view", 
+    "build:html:editor", 
+    "build:html:editor_empty",
+    "build:angular:app", 
+    "build:vendors", 
+    "sass"
+]);
