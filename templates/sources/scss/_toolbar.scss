@@ -1,0 +1,14 @@
+.mp-toolbar-container {
+    width: 100%;
+    margin: 0px;
+    padding: 5px;
+    background-color: #C1C1C1;
+    position: fixed;
+    z-index: 200;
+    box-shadow: 0 2px 5px 0 rgba(120, 120, 120, 0.5);
+    
+    .mp-toolbar-content-right {
+        float: right;
+    }
+}
+

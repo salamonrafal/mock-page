@@ -10,20 +10,20 @@ function config($httpProvider, $compileProvider, $stateProvider, $urlRouterProvi
             template: '<ui-view/>'
         })
         // setup a parent.inbox state
-        .state('parent.dashboard', {
+        .state('parent.preview', {
             // tell it what URL we want
-            url: '/dashboard',
+            url: '/preview',
             data: {
-                title: 'Dashboard',
-                breadcrumb: 'Dashboard'
+                title: 'Listing preview',
+                breadcrumb: 'Listing preview'
             },
             views: {
                 '@': {
-                    templateUrl: 'partials/dashboard.html',
-                    controller: 'DashboardCtrl as vm'
+                   // templateUrl: 'partials/dashboard.html',
+                   controller: 'previewCtrl as vm'
                 }
-            },
-            resolve: DashboardCtrl.resolve
+            }//,
+            //resolve: DashboardCtrl.resolve
         });
         /* .state('parent.dashboard.person', {
             url: '/:id',
@@ -36,7 +36,7 @@ function config($httpProvider, $compileProvider, $stateProvider, $urlRouterProvi
             resolve: EmailCtrl.resolve
         }); */
 
-    $urlRouterProvider.otherwise('/dashboard');
+    $urlRouterProvider.otherwise('/preview');
     $httpProvider.useApplyAsync(true);
     $compileProvider.debugInfoEnabled(false);
 
