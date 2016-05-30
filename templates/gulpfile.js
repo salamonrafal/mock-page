@@ -120,8 +120,12 @@ gulp.task("build:angular:app", function(){
  */
 gulp.task("build:vendors", function(){
     console.log("-- gulp is running task 'build:vendors'");
-    return gulp.src("./sources/js/**")
-        .pipe(copy("./client/js/", { "prefix": 2}));
+    
+    gulp.src("./sources/resources/css/**")
+    .pipe(copy("./client/css/", { "prefix": 3}));
+    
+    return gulp.src("./sources/resources/js/**")
+        .pipe(copy("./client/js/", { "prefix": 3}));
 });
 
 
