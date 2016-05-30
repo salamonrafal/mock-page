@@ -1,13 +1,3 @@
-<style>
-    p.mp-note {
-      font-size: 12px;
-      font-style: italic;
-      background-color: #CCC;
-      color: #000;
-      padding: 15px; 
-    }
-</style>
-
 # Mocking page module
 
 ## Template Installation
@@ -25,5 +15,5 @@
 * Version 1: http://mock-page.localserv.waw.pl/api/v1/
 * Version 1 mocks: http://mock-page.localserv.waw.pl/api/v1/mocks/ 
 
-<p class="mp-note">**NOTE**: Mocks is static Response with fake data. Only use for testing.</p>
+**NOTE**: _Mocks is static Response with fake data. Only use for testing._
 
