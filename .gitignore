@@ -6,3 +6,5 @@
 .buildpath
 ftp-sync.json
 /.vscode/
+/api/vendor/
+/api/composer.lock

@@ -42,6 +42,7 @@ function config($httpProvider, $compileProvider, $stateProvider, $urlRouterProvi
 
 }
 
+
 // controls the dynamic page titles
 function run($rootScope) {
     var page = {
