@@ -1,5 +1,5 @@
 
-function previewCtrl($rootScope, $state) {
+function previewCtrl($rootScope, $state, sections) {
 
     var vm = this;
 
@@ -18,16 +18,16 @@ function previewCtrl($rootScope, $state) {
 
     }*/
 
-  //  vm.people = people;
-
+    vm.sections = sections;
 }
 
 // resolve promises before Controller is instantiated
-/* previewCtrl.resolve = {
-    people: function(PeopleService){
-        return PeopleService.getPeople();
+previewCtrl.resolve = {
+    sections: function(sectionsService){
+        return sectionsService.getSections();
     } 
-};*/
+    
+};
 
 angular
     .module('/* @echo application_name */') // getter method

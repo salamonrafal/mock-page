@@ -19,11 +19,11 @@ function config($httpProvider, $compileProvider, $stateProvider, $urlRouterProvi
             },
             views: {
                 '@': {
-                   // templateUrl: 'partials/dashboard.html',
+                   templateUrl: 'partials/views/preview.html',
                    controller: 'previewCtrl as vm'
                 }
-            }//,
-            //resolve: DashboardCtrl.resolve
+            },
+            resolve: previewCtrl.resolve
         });
         /* .state('parent.dashboard.person', {
             url: '/:id',
