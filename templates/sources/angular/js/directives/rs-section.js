@@ -10,7 +10,7 @@ function rsSection($rootScope) {
         bindToController: {
             model: '='
         },
-        // templateUrl: 'partials/directives/rs-section-layout-simple_block.html',
+        templateUrl: 'partials/directives/rs-section.html',
         controller: 'rsSectionsCtrl',
         controllerAs: 'vm'
     };

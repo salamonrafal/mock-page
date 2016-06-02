@@ -11,6 +11,16 @@ function sectionsService($http, SETTING) {
             });
     }
     
+    function getTemplates () {
+        return $http
+            .get(SETTING.services.getTemplatesURL)
+            .then(function(response){
+                return response.data.data
+            }, function(reason) {
+                return reason;
+            })
+    }
+    
     return {
         "getSections": getSections
     };
