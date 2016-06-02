@@ -21,7 +21,7 @@
       - common
       - editor
       - view
-    - resources _Contains vendors CSS & JS files (eg. boostrap, AngularJS etc.) and images
+    - resources _Contains vendors CSS & JS files (eg. boostrap, AngularJS etc.) and images_
       - css
         - bootstrap
         - fonts
