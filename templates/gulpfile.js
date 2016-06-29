@@ -111,6 +111,22 @@ gulp.task("build:html:editor_empty", function() {
     themeVariables.class_page = 'mp-page-edit';
     themeVariables.pageType = 'editor';
     
+    themeVariables.layout.layout_1_block.blocks_1.content = "!#content_block_0#!";
+    themeVariables.layout.layout_1_block.blocks_1.title = "!#title_block_0#!";
+    
+    themeVariables.layout.layout_2_blocks.blocks_1.content = "!#content_block_0#!";
+    themeVariables.layout.layout_2_blocks.blocks_1.title = "!#title_block_0#!";
+    themeVariables.layout.layout_2_blocks.blocks_2.content = "!#content_block_1#!";
+    themeVariables.layout.layout_2_blocks.blocks_2.title = "!#title_block_1#!";
+    
+    
+    themeVariables.layout.layout_3_blocks.blocks_1.content = "!#content_block_0#!";
+    themeVariables.layout.layout_3_blocks.blocks_1.title = "!#title_block_0#!";
+    themeVariables.layout.layout_3_blocks.blocks_2.content = "!#content_block_1#!";
+    themeVariables.layout.layout_3_blocks.blocks_2.title = "!#title_block_1#!";
+    themeVariables.layout.layout_3_blocks.blocks_3.content = "!#content_block_2#!";
+    themeVariables.layout.layout_3_blocks.blocks_3.title = "!#title_block_2#!";
+    
     return gulp.src("sources/editor_empty_content.html")
         .pipe(include())
         .pipe(preprocess({context: themeVariables})) 
@@ -129,46 +145,22 @@ gulp.task("build:html:layouts_sections", function() {
     themeVariables.class_page = 'mp-page-edit';
     themeVariables.pageType = 'editor';
     
-    themeVariables.layout = {
-        layout_1_block : {
-                blocks_1: {
-                    content: "{{block_1_content}}",
-                    title: "{{block_1_title}}",
-                    name: "block_1_"
-            }
-        },
-        
-        layout_2_blocks: {
-            blocks_1: {
-                content: "{{block_1_content}}",
-                title: "{{block_1_title}}",
-                name: "block_1_"
-            }, 
-            blocks_2: {
-                content: "{{block_2_content}}",
-                title: "{{block_2_title}}",
-                name: "block_2_"
-            },
-        },
-        
-        layout_3_blocks: { 
-            blocks_1: {
-                content: "{{block_1_content}}",
-                title: "{{block_1_title}}",
-                name: "block_1_"
-            }, 
-            blocks_2: {
-                content: "{{block_2_content}}",
-                title: "{{block_2_title}}",
-                name: "block_2_"
-            }, 
-            blocks_3: {
-                content: "{{block_3_content}}",
-                title: "{{block_3_title}}",
-                name: "block_3_"
-            }
-        }  
-    };
+    themeVariables.layout.layout_1_block.blocks_1.content = "!#content_block_0#!";
+    themeVariables.layout.layout_1_block.blocks_1.title = "!#title_block_0#!";
+    
+    themeVariables.layout.layout_2_blocks.blocks_1.content = "!#content_block_0#!";
+    themeVariables.layout.layout_2_blocks.blocks_1.title = "!#title_block_0#!";
+    themeVariables.layout.layout_2_blocks.blocks_2.content = "!#content_block_1#!";
+    themeVariables.layout.layout_2_blocks.blocks_2.title = "!#title_block_1#!";
+    
+    
+    themeVariables.layout.layout_3_blocks.blocks_1.content = "!#content_block_0#!";
+    themeVariables.layout.layout_3_blocks.blocks_1.title = "!#title_block_0#!";
+    themeVariables.layout.layout_3_blocks.blocks_2.content = "!#content_block_1#!";
+    themeVariables.layout.layout_3_blocks.blocks_2.title = "!#title_block_1#!";
+    themeVariables.layout.layout_3_blocks.blocks_3.content = "!#content_block_2#!";
+    themeVariables.layout.layout_3_blocks.blocks_3.title = "!#title_block_2#!";
+    
     
     
     gulp.src("sources/partials/common/sections/_layout_1_block.html")

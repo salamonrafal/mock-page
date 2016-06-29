@@ -24,6 +24,7 @@ function rsSections($rootScope) {
  */
 function rsSectionsCtrl($rootScope, $state, SETTING, sectionsService) {
     var vm = this;
+    console.log(vm.model, '<<<<<<<<<<<< vm.model / sections');
 }
 
 angular
