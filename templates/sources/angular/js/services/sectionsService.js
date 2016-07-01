@@ -1,4 +1,4 @@
-function sectionsService($http, SETTING) {
+function sectionsService($http, SETTING, $sce) {
     
     function getSections () {
         return $http

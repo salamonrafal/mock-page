@@ -24,6 +24,9 @@ function rsSections($rootScope) {
  */
 function rsSectionsCtrl($rootScope, $state, SETTING, sectionsService) {
     var vm = this;
+    var editor = ContentTools.EditorApp.get();
+    
+    editor.init('.js-editable', 'data-blockid');
     console.log(vm.model, '<<<<<<<<<<<< vm.model / sections');
 }
 

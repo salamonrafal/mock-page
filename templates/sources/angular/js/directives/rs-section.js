@@ -44,7 +44,7 @@ function rsSectionCtrl($rootScope, $state, SETTING, sectionsService, $document, 
     vm.renderHtml = function (htmlCode) {
         return $sce.trustAsHtml(htmlCode);
     }
-}
+} 
 
 angular
     .module('/* @echo application_name */')

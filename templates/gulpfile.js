@@ -43,7 +43,8 @@ var gulp        = require('gulp'),
                     blocks_1: {
                         content: "<h2>H2.  Consectetur adipiscing elit</h2><p class=\"mp-style-justify\">Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Maecenas leo sapien, egestas eu ante id, porttitor commodo est. Phasellus pellentesque luctus purus vel viverra. Morbi ornare pretium tempus. Proin a ullamcorper sem. In arcu ex, auctor id dui vel, tincidunt blandit neque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer a venenatis purus. Sed posuere nisi eu mauris pharetra congue. Cras metus turpis, finibus id condimentum nec, pellentesque ut massa. Nunc tempus facilisis cursus.</p><h3>H3.  Consectetur adipiscing elit</h3><p class=\"mp-style-center\">Quisque eu convallis dolor. Donec pulvinar in est a mollis. Donec tristique lacus commodo lectus pharetra maximus. Sed id urna non tellus tincidunt condimentum. Donec quis lorem consectetur, gravida felis eget, cursus dui. Sed pretium tortor mauris, quis lobortis lectus vulputate pretium. Curabitur eleifend tortor dui. In et sapien condimentum risus ornare maximus. Nunc tortor nisl, hendrerit vitae dictum eu, pulvinar vitae lectus. Mauris aliquam quam tincidunt velit interdum egestas in ut turpis. Praesent consectetur volutpat dolor id tristique. Morbi nec augue quis nibh posuere euismod egestas id justo.</p><h4>H4.  Consectetur adipiscing elit</h4><p class=\"mp-style-justify\">Nam tincidunt, leo ac tempus mollis, nisl velit vehicula risus, at eleifend ipsum dui a nibh. Nam et lobortis lacus. Vestibulum a ligula quis arcu placerat ornare eget sodales justo. Etiam laoreet porttitor nulla nec ultrices. Phasellus condimentum turpis eget metus dignissim aliquet. Donec congue a ipsum sit amet congue. Vestibulum vestibulum ex vel purus molestie dignissim.</p><h5>H5.  Consectetur adipiscing elit</h5><p class=\"mp-style-justify\">Vestibulum facilisis faucibus mauris, vel ullamcorper urna viverra vel. Suspendisse pretium augue nec sapien venenatis fermentum. Praesent ullamcorper mauris at porta imperdiet. Nulla ut lorem ac magna pharetra dictum. Aenean a mi vitae est consectetur lobortis nec id nulla. Cras nec risus pellentesque, porttitor nisl in, dapibus justo. Curabitur a euismod nunc. Nullam ultricies, leo a viverra tincidunt, nisi libero molestie leo, at aliquam velit felis vel tellus. Maecenas auctor ipsum in fringilla rutrum. Aliquam sit amet lacus est. Praesent dictum orci eleifend, viverra libero nec, consectetur diam. Quisque posuere orci ac aliquam aliquet. Curabitur sit amet ipsum dignissim lorem sollicitudin mattis. Cras aliquam ex a dolor porta, et cursus nibh condimentum. Ut nec erat tellus.</p><h6>H6.  Consectetur adipiscing elit</h6><p class=\"mp-style-justify\">Donec venenatis imperdiet dapibus. Sed mollis metus facilisis lobortis condimentum. Mauris at quam sed lorem aliquet sodales et dapibus libero. Curabitur eget neque sollicitudin, fermentum risus sed, luctus nulla. Aenean pretium velit eget leo fringilla, a congue tellus convallis. Nunc quis scelerisque mauris. Fusce at porttitor magna. Cras quam erat, mollis in felis in, mollis sagittis arcu. Maecenas hendrerit at tortor non auctor.</p> ",
                         title: "Lorem ipsum dolor sit amet (1)",
-                        name: "_block_1"
+                        name: "_block_1",
+                        attrs: ''
                 }
             },
             
@@ -51,12 +52,14 @@ var gulp        = require('gulp'),
                 blocks_1: {
                     content: "<p class=\"mp-style-justify\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas leo sapien, egestas eu ante id, porttitor commodo est. Phasellus pellentesque luctus purus vel viverra. Morbi ornare pretium tempus. Proin a ullamcorper sem. In arcu ex, auctor id dui vel, tincidunt blandit neque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer a venenatis purus. Sed posuere nisi eu mauris pharetra congue. Cras metus turpis, finibus id condimentum nec, pellentesque ut massa. Nunc tempus facilisis cursus.</p> <p class=\"mp-style-justify\">Quisque eu convallis dolor. Donec pulvinar in est a mollis. Donec tristique lacus commodo lectus pharetra maximus. Sed id urna non tellus tincidunt condimentum. Donec quis lorem consectetur, gravida felis eget, cursus dui. Sed pretium tortor mauris, quis lobortis lectus vulputate pretium. Curabitur eleifend tortor dui. In et sapien condimentum risus ornare maximus. Nunc tortor nisl, hendrerit vitae dictum eu, pulvinar vitae lectus. Mauris aliquam quam tincidunt velit interdum egestas in ut turpis. Praesent consectetur volutpat dolor id tristique. Morbi nec augue quis nibh posuere euismod egestas id justo.</p>",
                     title: "Lorem ipsum dolor sit amet (1)",
-                    name: "_block_1"
+                    name: "_block_1",
+                    attrs: ''
                 }, 
                 blocks_2: {
                     content: "<p class=\"mp-style-justify\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas leo sapien, egestas eu ante id, porttitor commodo est. Phasellus pellentesque luctus purus vel viverra. Morbi ornare pretium tempus. Proin a ullamcorper sem. In arcu ex, auctor id dui vel, tincidunt blandit neque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer a venenatis purus. Sed posuere nisi eu mauris pharetra congue. Cras metus turpis, finibus id condimentum nec, pellentesque ut massa. Nunc tempus facilisis cursus.</p> <p class=\"mp-style-justify\">Quisque eu convallis dolor. Donec pulvinar in est a mollis. Donec tristique lacus commodo lectus pharetra maximus. Sed id urna non tellus tincidunt condimentum. Donec quis lorem consectetur, gravida felis eget, cursus dui. Sed pretium tortor mauris, quis lobortis lectus vulputate pretium. Curabitur eleifend tortor dui. In et sapien condimentum risus ornare maximus. Nunc tortor nisl, hendrerit vitae dictum eu, pulvinar vitae lectus. Mauris aliquam quam tincidunt velit interdum egestas in ut turpis. Praesent consectetur volutpat dolor id tristique. Morbi nec augue quis nibh posuere euismod egestas id justo.</p>",
                     title: "Lorem ipsum dolor sit amet (2)",
-                    name: "_block_2"
+                    name: "_block_2",
+                    attrs: ''
                 },
             },
             
@@ -64,17 +67,20 @@ var gulp        = require('gulp'),
                 blocks_1: {
                     content: "<p class=\"mp-style-justify\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas leo sapien, egestas eu ante id, porttitor commodo est. Phasellus pellentesque luctus purus vel viverra. Morbi ornare pretium tempus. Proin a ullamcorper sem. In arcu ex, auctor id dui vel, tincidunt blandit neque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer a venenatis purus. Sed posuere nisi eu mauris pharetra congue. Cras metus turpis, finibus id condimentum nec, pellentesque ut massa. Nunc tempus facilisis cursus.</p> <p class=\"mp-style-justify\">Quisque eu convallis dolor. Donec pulvinar in est a mollis. Donec tristique lacus commodo lectus pharetra maximus. Sed id urna non tellus tincidunt condimentum. Donec quis lorem consectetur, gravida felis eget, cursus dui. Sed pretium tortor mauris, quis lobortis lectus vulputate pretium. Curabitur eleifend tortor dui. In et sapien condimentum risus ornare maximus. Nunc tortor nisl, hendrerit vitae dictum eu, pulvinar vitae lectus. Mauris aliquam quam tincidunt velit interdum egestas in ut turpis. Praesent consectetur volutpat dolor id tristique. Morbi nec augue quis nibh posuere euismod egestas id justo.</p>",
                     title: "Lorem ipsum dolor sit amet (1)",
-                    name: "_block_1"
+                    name: "_block_1",
+                    attrs: ''
                 }, 
                 blocks_2: {
                     content: "<p class=\"mp-style-justify\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas leo sapien, egestas eu ante id, porttitor commodo est. Phasellus pellentesque luctus purus vel viverra. Morbi ornare pretium tempus. Proin a ullamcorper sem. In arcu ex, auctor id dui vel, tincidunt blandit neque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer a venenatis purus. Sed posuere nisi eu mauris pharetra congue. Cras metus turpis, finibus id condimentum nec, pellentesque ut massa. Nunc tempus facilisis cursus.</p> <p class=\"mp-style-justify\">Quisque eu convallis dolor. Donec pulvinar in est a mollis. Donec tristique lacus commodo lectus pharetra maximus. Sed id urna non tellus tincidunt condimentum. Donec quis lorem consectetur, gravida felis eget, cursus dui. Sed pretium tortor mauris, quis lobortis lectus vulputate pretium. Curabitur eleifend tortor dui. In et sapien condimentum risus ornare maximus. Nunc tortor nisl, hendrerit vitae dictum eu, pulvinar vitae lectus. Mauris aliquam quam tincidunt velit interdum egestas in ut turpis. Praesent consectetur volutpat dolor id tristique. Morbi nec augue quis nibh posuere euismod egestas id justo.</p>",
                     title: "Lorem ipsum dolor sit amet (2)",
-                    name: "_block_2"
+                    name: "_block_2",
+                    attrs: ''
                 }, 
                 blocks_3: {
                     content: "<p class=\"mp-style-justify\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas leo sapien, egestas eu ante id, porttitor commodo est. Phasellus pellentesque luctus purus vel viverra. Morbi ornare pretium tempus. Proin a ullamcorper sem. In arcu ex, auctor id dui vel, tincidunt blandit neque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer a venenatis purus. Sed posuere nisi eu mauris pharetra congue. Cras metus turpis, finibus id condimentum nec, pellentesque ut massa. Nunc tempus facilisis cursus. <a href=\"#\">Tes les main</a></p> ",
                     title: "Lorem ipsum dolor sit amet (3)",
-                    name: "_block_3"
+                    name: "_block_3",
+                    attrs: ''
                 }
              }  
         }
@@ -111,21 +117,33 @@ gulp.task("build:html:editor_empty", function() {
     themeVariables.class_page = 'mp-page-edit';
     themeVariables.pageType = 'editor';
     
-    themeVariables.layout.layout_1_block.blocks_1.content = "!#content_block_0#!";
+    themeVariables.layout.layout_1_block.blocks_1.content = "!#{content_block_0}#!";
     themeVariables.layout.layout_1_block.blocks_1.title = "!#title_block_0#!";
+    themeVariables.layout.layout_1_block.blocks_1.attrs = " data-blockid=\"!#id_block_0#!\"";
     
-    themeVariables.layout.layout_2_blocks.blocks_1.content = "!#content_block_0#!";
+    
+    
+    themeVariables.layout.layout_2_blocks.blocks_1.content = "!#{content_block_0}#!";
     themeVariables.layout.layout_2_blocks.blocks_1.title = "!#title_block_0#!";
-    themeVariables.layout.layout_2_blocks.blocks_2.content = "!#content_block_1#!";
+    themeVariables.layout.layout_2_blocks.blocks_1.attrs = " data-blockid=\"!#id_block_0#!\"";
+    
+    themeVariables.layout.layout_2_blocks.blocks_2.content = "!#{content_block_1}#!";
     themeVariables.layout.layout_2_blocks.blocks_2.title = "!#title_block_1#!";
+    themeVariables.layout.layout_2_blocks.blocks_2.attrs = " data-blockid=\"!#id_block_1#!\"";
     
     
-    themeVariables.layout.layout_3_blocks.blocks_1.content = "!#content_block_0#!";
+    
+    themeVariables.layout.layout_3_blocks.blocks_1.content = "!#{content_block_0}#!";
     themeVariables.layout.layout_3_blocks.blocks_1.title = "!#title_block_0#!";
-    themeVariables.layout.layout_3_blocks.blocks_2.content = "!#content_block_1#!";
+    themeVariables.layout.layout_3_blocks.blocks_1.attrs = " data-blockid=\"!#id_block_0#!\"";
+    
+    themeVariables.layout.layout_3_blocks.blocks_2.content = "!#{content_block_1}#!";
     themeVariables.layout.layout_3_blocks.blocks_2.title = "!#title_block_1#!";
-    themeVariables.layout.layout_3_blocks.blocks_3.content = "!#content_block_2#!";
+    themeVariables.layout.layout_3_blocks.blocks_2.attrs = " data-blockid=\"!#id_block_1#!\"";
+    
+    themeVariables.layout.layout_3_blocks.blocks_3.content = "!#{content_block_2}#!";
     themeVariables.layout.layout_3_blocks.blocks_3.title = "!#title_block_2#!";
+    themeVariables.layout.layout_3_blocks.blocks_3.attrs = " data-blockid=\"!#id_block_2#!\"";
     
     return gulp.src("sources/editor_empty_content.html")
         .pipe(include())
@@ -145,21 +163,33 @@ gulp.task("build:html:layouts_sections", function() {
     themeVariables.class_page = 'mp-page-edit';
     themeVariables.pageType = 'editor';
     
-    themeVariables.layout.layout_1_block.blocks_1.content = "!#content_block_0#!";
+    themeVariables.layout.layout_1_block.blocks_1.content = "!#{content_block_0}#!";
     themeVariables.layout.layout_1_block.blocks_1.title = "!#title_block_0#!";
+    themeVariables.layout.layout_1_block.blocks_1.attrs = " data-blockid=\"!#id_block_0#!\"";
     
-    themeVariables.layout.layout_2_blocks.blocks_1.content = "!#content_block_0#!";
+    
+    
+    themeVariables.layout.layout_2_blocks.blocks_1.content = "!#{content_block_0}#!";
     themeVariables.layout.layout_2_blocks.blocks_1.title = "!#title_block_0#!";
-    themeVariables.layout.layout_2_blocks.blocks_2.content = "!#content_block_1#!";
+    themeVariables.layout.layout_2_blocks.blocks_1.attrs = " data-blockid=\"!#id_block_0#!\"";
+    
+    themeVariables.layout.layout_2_blocks.blocks_2.content = "!#{content_block_1#!";
     themeVariables.layout.layout_2_blocks.blocks_2.title = "!#title_block_1#!";
+    themeVariables.layout.layout_2_blocks.blocks_2.attrs = " data-blockid=\"!#id_block_1#!\"";
     
     
-    themeVariables.layout.layout_3_blocks.blocks_1.content = "!#content_block_0#!";
+    
+    themeVariables.layout.layout_3_blocks.blocks_1.content = "!#{content_block_0}#!";
     themeVariables.layout.layout_3_blocks.blocks_1.title = "!#title_block_0#!";
-    themeVariables.layout.layout_3_blocks.blocks_2.content = "!#content_block_1#!";
+    themeVariables.layout.layout_3_blocks.blocks_1.attrs = " data-blockid=\"!#id_block_0#!\"";
+    
+    themeVariables.layout.layout_3_blocks.blocks_2.content = "!#{content_block_1}#!";
     themeVariables.layout.layout_3_blocks.blocks_2.title = "!#title_block_1#!";
-    themeVariables.layout.layout_3_blocks.blocks_3.content = "!#content_block_2#!";
+    themeVariables.layout.layout_3_blocks.blocks_2.attrs = " data-blockid=\"!#id_block_1#!\"";
+    
+    themeVariables.layout.layout_3_blocks.blocks_3.content = "!#{content_block_2}#!";
     themeVariables.layout.layout_3_blocks.blocks_3.title = "!#title_block_2#!";
+    themeVariables.layout.layout_3_blocks.blocks_3.attrs = " data-blockid=\"!#id_block_2#!\"";
     
     
     
