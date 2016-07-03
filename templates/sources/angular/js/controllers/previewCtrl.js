@@ -1,7 +1,24 @@
 
-function previewCtrl($rootScope, $state, sections) {
-
+function previewCtrl($rootScope, $state, sections, editorService) {
     var vm = this;
+
+    $rootScope.$on('$viewContentLoaded', function() {
+        var editor;
+
+        var tlEditor  = setTimeout (function(){
+            var $elements = angular.element('.js-editable');
+            var countElements = $elements.length;
+            
+            if ( countElements > 0) {
+                editor = editorService.initEditor();
+                clearTimeout(tlEditor);
+            }
+
+        }, 1000);
+        
+        console.log(ContentTools);
+        console.log('>>>>>>>>>>>>>>>>>> $viewContentLoaded >>>>>>>>>>>>>>>>>>');
+    });
 
    /* $rootScope.$on('add.person', function (event, value){
         people.push(value);
